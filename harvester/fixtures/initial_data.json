@@ -1,0 +1,50 @@
+[
+{
+    "model": "harvester.platform",
+    "pk": 1,
+    "fields": {
+        "name": "Windows"
+    }
+},
+{
+    "model": "harvester.platform",
+    "pk": 2,
+    "fields": {
+        "name": "Linux"
+    }
+},
+{
+    "model": "harvester.platform",
+    "pk": 3,
+    "fields": {
+        "name": "Mac"
+    }
+},
+{
+    "model": "harvester.integrationtype",
+    "pk": 1,
+    "fields": {
+        "name": "Continuous Integration",
+        "abbrev": "ci",
+        "description": ""
+    }
+},
+{
+    "model": "harvester.integrationtype",
+    "pk": 2,
+    "fields": {
+        "name": "Daily Integration",
+        "abbrev": "di",
+        "description": ""
+    }
+},
+{
+    "model": "harvester.integrationtype",
+    "pk": 3,
+    "fields": {
+        "name": "Weekly Integration",
+        "abbrev": "wi",
+        "description": ""
+    }
+}
+]

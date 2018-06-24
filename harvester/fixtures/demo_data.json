@@ -1,0 +1,132 @@
+[
+{
+    "model": "harvester.buildproject",
+    "pk": 1,
+    "fields": {
+        "name": "DJSKEL_BUILD"
+    }
+},
+{
+    "model": "harvester.platform",
+    "pk": 1,
+    "fields": {
+        "name": "Windows"
+    }
+},
+{
+    "model": "harvester.platform",
+    "pk": 2,
+    "fields": {
+        "name": "Linux"
+    }
+},
+{
+    "model": "harvester.platform",
+    "pk": 3,
+    "fields": {
+        "name": "Mac"
+    }
+},
+{
+    "model": "harvester.build",
+    "pk": 1,
+    "fields": {
+        "project": 1,
+        "ci_build_id": "1001",
+        "status": null,
+        "started": "2018-06-24T17:41:32Z",
+        "finished": null,
+        "created": "2018-06-24T17:42:08.292Z",
+        "modified": "2018-06-24T17:42:08.292Z",
+        "integration_type": 1,
+        "last_change": 1
+    }
+},
+{
+    "model": "harvester.build",
+    "pk": 2,
+    "fields": {
+        "project": 1,
+        "ci_build_id": "1002",
+        "status": null,
+        "started": "2018-06-24T17:42:22Z",
+        "finished": null,
+        "created": "2018-06-24T17:42:46.948Z",
+        "modified": "2018-06-24T17:42:46.948Z",
+        "integration_type": 1,
+        "last_change": 2
+    }
+},
+{
+    "model": "harvester.integrationtype",
+    "pk": 1,
+    "fields": {
+        "name": "Continuous Integration",
+        "abbrev": "ci",
+        "description": ""
+    }
+},
+{
+    "model": "harvester.integrationtype",
+    "pk": 2,
+    "fields": {
+        "name": "Daily Integration",
+        "abbrev": "di",
+        "description": ""
+    }
+},
+{
+    "model": "harvester.integrationtype",
+    "pk": 3,
+    "fields": {
+        "name": "Weekly Integration",
+        "abbrev": "wi",
+        "description": ""
+    }
+},
+{
+    "model": "harvester.change",
+    "pk": 1,
+    "fields": {
+        "revision": "1",
+        "summary": "Hello World",
+        "description": "",
+        "author": "Eugene",
+        "parent": null,
+        "timestamp": "2018-06-24T17:41:55Z",
+        "branch": 1,
+        "merges_to": []
+    }
+},
+{
+    "model": "harvester.change",
+    "pk": 2,
+    "fields": {
+        "revision": "2",
+        "summary": "Foo Bar",
+        "description": "",
+        "author": "Eugene",
+        "parent": 1,
+        "timestamp": "2018-06-24T17:42:42Z",
+        "branch": 1,
+        "merges_to": []
+    }
+},
+{
+    "model": "harvester.branch",
+    "pk": 1,
+    "fields": {
+        "name": "master",
+        "repository": 1
+    }
+},
+{
+    "model": "harvester.repository",
+    "pk": 1,
+    "fields": {
+        "name": "djskel",
+        "url": "https://github.com/9gix/djskel",
+        "scm": 0
+    }
+}
+]
